@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Becky's Pizza - Menu</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">Becky's Pizza</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="cart-toggle" class="cart-toggle">🛒 <span id="cart-count">0</span></button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="menu-hero">
+    <h1>Our Menu 🍕</h1>
+    <p>Choose your favorite pizzas and fast foods!</p>
+  </section>
+
+  <section class="menu-categories">
+    <div class="category-nav">
+      <a href="#chicken">Chicken</a>
+      <a href="#burgers">Burgers</a>
+      <a href="#pizza">Pizza</a>
+      <a href="#sides">Sides</a>
+      <a href="#sausages">Sausages</a>
+      <a href="#drinks">Drinks</a>
+      <a href="#desserts">Desserts</a>
+    </div>
+
+    <!-- --- MENU SECTIONS --- -->
+    <section id="chicken" class="menu-section">
+      <h2>Chicken</h2>
+      <div class="menu-items">
+        <div class="item" data-image="">
+          <div class="item-image">🍗</div>
+          <h3>Fried Chicken</h3>
+          <p class="muted">Crispy golden pieces</p>
+          <div class="price-qty-row">
+            <div class="price">KSh <span class="price-value">1200</span></div>
+            <div class="quantity-container">
+              <label>Qty</label>
+              <input class="quantity" type="number" min="1" value="1">
+            </div>
+          </div>
+          <button class="add-to-cart" data-name="Fried Chicken" data-price="1200">Add to Cart</button>
+        </div>
+
+        <div class="item" data-image="">
+          <div class="item-image">🔥</div>
+          <h3>Spicy Wings</h3>
+          <p class="muted">Hot & spicy wings</p>
+          <div class="price-qty-row">
+            <div class="price">KSh <span class="price-value">800</span></div>
+            <div class="quantity-container">
+              <label>Qty</label>
+              <input class="quantity" type="number" min="1" value="1">
+            </div>
+          </div>
+          <button class="add-to-cart" data-name="Spicy Wings" data-price="800">Add to Cart</button>
+        </div>
+
+        <div class="item" data-image="">
+          <div class="item-image">🐔</div>
+          <h3>Chicken Nuggets (8pc)</h3>
+          <p class="muted">Crispy bite-size nuggets</p>
+          <div class="price-qty-row">
+            <div class="price">KSh <span class="price-value">650</span></div>
+            <div class="quantity-container">
+              <label>Qty</label>
+              <input class="quantity" type="number" min="1" value="1">
+            </div>
+          </div>
+          <button class="add-to-cart" data-name="Chicken Nuggets" data-price="650">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="burgers" class="menu-section">
+  <h2>Burgers 🍔</h2>
+  <div class="menu-items">
+    <div class="item">
+      <div class="item-image">🍗</div>
+      <h3>Zinger Burger</h3>
+      <p class="muted">Spicy chicken fillet burger</p>
+      <div class="price-qty-row">
+        <div class="price">KSh <span class="price-value">850</span></div>
+        <div class="quantity-container"><label>Qty</label><input class="quantity" type="number" min="1" value="1"></div>
+      </div>
+      <button class="add-to-cart" data-name="Zinger Burger" data-price="850">Add to Cart</button>
+    </div>
+    <div class="item">
+      <div class="item-image">🥩</div>
+      <h3>Beef Burger</h3>
+      <p class="muted">Juicy beef patty with cheese</p>
+      <div class="price-qty-row">
+        <div class="price">KSh <span class="price-value">900</span></div>
+        <div class="quantity-container"><label>Qty</label><input class="quantity" type="number" min="1" value="1"></div>
+      </div>
+      <button class="add-to-cart" data-name="Beef Burger" data-price="900">Add to Cart</button>
+    </div>
+    <div class="item">
+      <div class="item-image">🐔</div>
+      <h3>Chicken Burger</h3>
+      <p class="muted">Grilled chicken breast burger</p>
+      <div class="price-qty-row">
+        <div class="price">KSh <span class="price-value">800</span></div>
+        <div class="quantity-container"><label>Qty</label><input class="quantity" type="number" min="1" value="1"></div>
+      </div>
+      <button class="add-to-cart" data-name="Chicken Burger" data-price="800">Add to Cart</button>
+    </div>
+    <div class="item">
+      <div class="item-image">🧀</div>
+      <h3>Cheese Burger Deluxe</h3>
+      <p class="muted">Double cheese with special sauce</p>
+      <div class="price-qty-row">
+        <div class="price">KSh <span class="price-value">950</span></div>
+        <div class="quantity-container"><label>Qty</label><input class="quantity" type="number" min="1" value="1"></div>
+      </div>
+      <button class="add-to-cart" data-name="Cheese Burger Deluxe" data-price="950">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+    <section id="pizza" class="menu-section">
+  <h2>Pizza 🍕</h2>
+  <div class="menu-items">
+    <div class="item">
+      <div class="item-image">🧀</div>
+      <h3>Margherita Pizza</h3>
+      <p class="muted">Classic cheese and tomato</p>
+      <div class="price-qty-row">
+        <div class="price">KSh <span class="price-value">800</span></div>
+        <div class="quantity-container"><label>Qty</label><input class="quantity" type="number" min="1" value="1"></div>
+      </div>
+      <button class="add-to-cart" data-name="Margherita Pizza" data-price="800">Add to Cart</button>
+    </div>
+    <div class="item">
+      <div class="item-image">🍖</div>
+      <h3>Pepperoni Pizza</h3>
+      <p class="muted">Pepperoni with extra cheese</p>
+      <div class="price-qty-row">
+        <div class="price">KSh <span class="price-value">1000</span></div>
+        <div class="quantity-container"><label>Qty</label><input class="quantity" type="number" min="1" value="1"></div>
+      </div>
+      <button class="add-to-cart" data-name="Pepperoni Pizza" data-price="1000">Add to Cart</button>
+    </div>
+    <div class="item">
+      <div class="item-image">🥦</div>
+      <h3>Veggie Pizza</h3>
+      <p class="muted">Mixed vegetables delight</p>
+      <div class="price-qty-row">
+        <div class="price">KSh <span class="price-value">900</span></div>
+        <div class="quantity-container"><label>Qty</label><input class="quantity" type="number" min="1" value="1"></div>
+      </div>
+      <button class="add-to-cart" data-name="Veggie Pizza" data-price="900">Add to Cart</button>
+    </div>
+    <div class="item">
+      <div class="item-image">🍗</div>
+      <h3>Chicken Supreme Pizza</h3>
+      <p class="muted">Chicken, peppers, and onions</p>
+      <div class="price-qty-row">
+        <div class="price">KSh <span class="price-value">1100</span></div>
+        <div class="quantity-container"><label>Qty</label><input class="quantity" type="number" min="1" value="1"></div>
+      </div>
+      <button class="add-to-cart" data-name="Chicken Supreme Pizza" data-price="1100">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+    <section id="sides" class="menu-section">
+  <h2>Sides 🍟</h2>
+  <div class="menu-items">
+    <div class="item">
+      <div class="item-image">🍟</div>
+      <h3>French Fries</h3>
+      <p class="muted">Crispy golden fries</p>
+      <div class="price-qty-row">
+        <div class="price">KSh <span class="price-value">400</span></div>
+        <div class="quantity-container"><label>Qty</label><input class="quantity" type="number" min="1" value="1"></div>
+      </div>
+      <button class="add-to-cart" data-name="French Fries" data-price="400">Add to Cart</button>
+    </div>
+    <div class="item">
+      <div class="item-image">🥗</div>
+      <h3>Coleslaw</h3>
+      <p class="muted">Fresh cabbage salad</p>
+      <div class="price-qty-row">
+        <div class="price">KSh <span class="price-value">300</span></div>
+        <div class="quantity-container"><label>Qty</label><input class="quantity" type="number" min="1" value="1"></div>
+      </div>
+      <button class="add-to-cart" data-name="Coleslaw" data-price="300">Add to Cart</button>
+    </div>
+    <div class="item">
+      <div class="item-image">🍿</div>
+      <h3>Popcorn Chicken</h3>
+      <p class="muted">Bite-sized crispy chicken</p>
+      <div class="price-qty-row">
+        <div class="price">KSh <span class="price-value">500</span></div>
+        <div class="quantity-container"><label>Qty</label><input class="quantity" type="number" min="1" value="1"></div>
+      </div>
+      <button class="add-to-cart" data-name="Popcorn Chicken" data-price="500">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+    <section id="drinks" class="menu-section">
+  <h2>Drinks 🥤</h2>
+  <div class="menu-items">
+    <div class="item">
+      <div class="item-image">🥤</div>
+      <h3>Coca-Cola</h3>
+      <p class="muted">500ml chilled bottle</p>
+      <div class="price-qty-row">
+        <div class="price">KSh <span class="price-value">150</span></div>
+        <div class="quantity-container"><label>Qty</label><input class="quantity" type="number" min="1" value="1"></div>
+      </div>
+      <button class="add-to-cart" data-name="Coca-Cola" data-price="150">Add to Cart</button>
+    </div>
+    <div class="item">
+      <div class="item-image">🍊</div>
+      <h3>Orange Juice</h3>
+      <p class="muted">Fresh squeezed orange juice</p>
+      <div class="price-qty-row">
+        <div class="price">KSh <span class="price-value">200</span></div>
+        <div class="quantity-container"><label>Qty</label><input class="quantity" type="number" min="1" value="1"></div>
+      </div>
+      <button class="add-to-cart" data-name="Orange Juice" data-price="200">Add to Cart</button>
+    </div>
+    <div class="item">
+      <div class="item-image">💧</div>
+      <h3>Bottled Water</h3>
+      <p class="muted">500ml purified water</p>
+      <div class="price-qty-row">
+        <div class="price">KSh <span class="price-value">100</span></div>
+        <div class="quantity-container"><label>Qty</label><input class="quantity" type="number" min="1" value="1"></div>
+      </div>
+      <button class="add-to-cart" data-name="Bottled Water" data-price="100">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+    <section id="desserts" class="menu-section">
+  <h2>Desserts 🍰</h2>
+  <div class="menu-items">
+    <div class="item">
+      <div class="item-image">🍦</div>
+      <h3>Ice Cream</h3>
+      <p class="muted">Vanilla scoop</p>
+      <div class="price-qty-row">
+        <div class="price">KSh <span class="price-value">300</span></div>
+        <div class="quantity-container"><label>Qty</label><input class="quantity" type="number" min="1" value="1"></div>
+      </div>
+      <button class="add-to-cart" data-name="Ice Cream" data-price="300">Add to Cart</button>
+    </div>
+    <div class="item">
+      <div class="item-image">🧁</div>
+      <h3>Muffin</h3>
+      <p class="muted">Fresh baked chocolate muffin</p>
+      <div class="price-qty-row">
+        <div class="price">KSh <span class="price-value">250</span></div>
+        <div class="quantity-container"><label>Qty</label><input class="quantity" type="number" min="1" value="1"></div>
+      </div>
+      <button class="add-to-cart" data-name="Muffin" data-price="250">Add to Cart</button>
+    </div>
+    <div class="item">
+      <div class="item-image">🍰</div>
+      <h3>Cake Slice</h3>
+      <p class="muted">Delicious chocolate cake slice</p>
+      <div class="price-qty-row">
+        <div class="price">KSh <span class="price-value">350</span></div>
+        <div class="quantity-container"><label>Qty</label><input class="quantity" type="number" min="1" value="1"></div>
+      </div>
+      <button class="add-to-cart" data-name="Cake Slice" data-price="350">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h2>Your Order</h2>
+      <button id="close-cart">&times;</button>
+    </div>
+    <ul id="cart-items"></ul>
+    <div class="cart-footer">
+      <p>Total: KSh <span id="total">0</span></p>
+      <button id="checkout">Checkout via WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <footer id="contact">
+    <p>Contact us: +254 700 000000 | WhatsApp: +254 700 000000</p>
+    <p>Email: order@beckyspizza.com</p>
+  </footer>
+
+  <script src="script/main.js"></script>
+</body>
+</html>
